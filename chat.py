@@ -9,7 +9,11 @@ socketio = SocketIO( app )
 
 @app.route( '/' )
 def hello():
-  return render_template( './ChatApp.html' )
+  return render_template( 'init.html' )
+
+@app.route('/chat')
+def chat():
+    return render_template('ChatApp.html')
 
 @socketio.on( 'my event' )
 def handle_my_custom_event( json ):

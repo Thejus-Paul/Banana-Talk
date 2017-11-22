@@ -1,7 +1,7 @@
 // Connecting socketio to the server
 var socket = io.connect( 'http://' + document.domain + ':' + location.port )
 // while socket is connected
-var username =  $('input.username').val();
+var username =  document.cookie;
 socket.on( 'connect', function() {
   // On submit of the form the function will return e
   $( 'form' ).submit(function( e ) {
@@ -22,10 +22,10 @@ socket.on( 'my response', function( json ) {
 
   if(typeof json.username !== 'undefined' ) {
     if(username !== json.username){
-    $( 'div.messagebox' ).append("<div class='msg_bubble'><strong>"+json.username+"</strong>&nbsp;&nbsp;"+json.message+"</div><br>")
+    $( 'div.messagebox' ).append("<div class='msg_bubble'><strong>"+json.username+"</strong>&nbsp;&nbsp;"+json.message+"</div><br><br>")
   }
     else{
-      $( 'div.messagebox' ).append("<div class='right_msg_bubble'><strong>"+json.username+"</strong>&nbsp;&nbsp;"+json.message+"</div><br>")
+      $( 'div.messagebox' ).append("<div class='right_msg_bubble'><strong>"+json.username+"</strong>&nbsp;&nbsp;"+json.message+"</div><br><br>")
     }
   }
 })

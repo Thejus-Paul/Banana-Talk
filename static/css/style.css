@@ -1,15 +1,16 @@
-.navbar{
-  display:block;!important
+body{
+  background-image: url(../img/chat-wallpaper.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .msg_bubble{
-  margin-top: 10px;
   border-radius: 50px;
   padding:10px;
   background-color: silver;
   display: inline-flex;
 }
 .right_msg_bubble{
-  margin-top: 10px;
   border-radius: 50px;
   float:right;
   padding:10px;

@@ -1,0 +1,14 @@
+body{
+  background-image: url('../img/login-wallpaper.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.centered{
+    position: fixed;
+    padding:1%;
+    color:white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
