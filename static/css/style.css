@@ -1,5 +1,5 @@
 body{
-  background-image: url(../img/chat-wallpaper.jpg);
+  background-image: url("../img/chat-wallpaper.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
