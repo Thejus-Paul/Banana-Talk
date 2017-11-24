@@ -1,6 +1,6 @@
 # Banana Talk
 
-Banana Talk is a simple private chatting application built using Python,HTML and JS.
+Banana Talk is a simple private chatting application built using Python, HTML and JS.
 
 # Modifications:
 1. No need to type username twice.
