@@ -1,8 +1,9 @@
 body{
   background-image: url('../img/login-wallpaper.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed !important;
+  background-position: center;
+	background-repeat: repeat !important;
+	background-size: cover !important;
 }
 .centered{
     position: fixed;

@@ -9,7 +9,7 @@ socket.on( 'connect', function() {
     e.preventDefault()
     // Sending the object containing username and message
     socket.emit( 'my event', {
-      username : $('input.username').val(), // Storing the value from input tag and class username
+      username : document.cookie, // Storing the value from input tag and class username
       message : $( 'input.message' ).val(), // Storing the value from input tag and class message (an extra ',' is used at the end to avoid an error)
     } )
     // empty the input field and focusing

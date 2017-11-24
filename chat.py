@@ -1,10 +1,9 @@
 from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
-import hashlib
 
 app = Flask(__name__)
 
-app.config[ 'SECRET_KEY' ] = 'jsbcfsbfjefebw237u3gdbdc'
+app.config[ 'SECRET_KEY' ] = 'adsflkjqwruweirzxcvzxcv'
 socketio = SocketIO( app )
 
 @app.route( '/' )
@@ -13,7 +12,7 @@ def hello():
 
 @app.route('/chat')
 def chat():
-    return render_template('ChatApp.html')
+    return render_template('banana_talk.html')
 
 @socketio.on( 'my event' )
 def handle_my_custom_event( json ):
