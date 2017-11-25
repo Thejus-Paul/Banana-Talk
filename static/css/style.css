@@ -4,6 +4,10 @@ body {
 	background-repeat: repeat !important;
 	background-size: cover !important;
 }
+.navbar{
+	display: block !important;
+}
+
 .msg_bubble{
   border-radius: 50px;
   padding:10px;
