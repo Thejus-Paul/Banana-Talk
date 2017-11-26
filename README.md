@@ -6,6 +6,7 @@ Banana Talk is a simple private chatting application built using Python, HTML an
 1. No need to type username twice.
 2. Background image scaling fixed.
 3. Made responsive using viewport.
+4. Instant scrolling has been implemented.
 
 # Features:
 1. Works with/without internet connection using LAN/wifi hotspot.
