@@ -7,9 +7,12 @@ body {
 .navbar{
 	display: block !important;
 }
-
+.messagebox{
+	margin-bottom: 55px;
+}
 .msg_bubble{
   border-radius: 50px;
+	margin-top: 2px;
   padding:10px;
   background-color: silver;
   display: inline-flex;

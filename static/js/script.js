@@ -21,11 +21,16 @@ socket.on( 'my response', function( json ) {
   // To avoid printing 'undefined' value for username and message
 
   if(typeof json.username !== 'undefined' ) {
+    // Verifying if the name given is the user or not
     if(username !== json.username){
-    $( 'div.messagebox' ).append("<div class='msg_bubble'><strong>"+json.username+"</strong>&nbsp;&nbsp;"+json.message+"</div><br><br>")
+      // If user is not the same then the message will be displayed in the left side
+      $( 'div.messagebox' ).append("<div class='msg_bubble'><strong>"+json.username+"</strong>&nbsp;&nbsp;"+json.message+"</div><br>")
   }
     else{
+      // If user is same then the message will be displayed in the right side
       $( 'div.messagebox' ).append("<div class='right_msg_bubble'><strong>"+json.username+"</strong>&nbsp;&nbsp;"+json.message+"</div><br><br>")
     }
   }
 })
+// Instant scrolling
+setInterval(function(){ window.scrollBy(0,1000); }, 1);
