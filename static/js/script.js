@@ -20,7 +20,7 @@ socket.on( 'connect', function() {
 socket.on( 'my response', function( json ) {
   // To avoid printing 'undefined' value for username and message
 
-  if(typeof json.username !== 'undefined' ) {
+  if(json.username !== '' ) {
     // Verifying if the name given is the user or not
     if(username !== json.username){
       // If user is not the same then the message will be displayed in the left side
