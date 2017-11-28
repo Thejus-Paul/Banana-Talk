@@ -1,8 +1,8 @@
 // Logo
 $(document).ready(function(){
-    $("#LOGO").click(function(){
-        $("#LOGO").slideUp(1500);
-    });
+  setTimeout(function(){
+    $("#LOGO").slideUp(1500);
+  },5000);
 });
 
 
