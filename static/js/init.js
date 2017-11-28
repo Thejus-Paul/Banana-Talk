@@ -1,3 +1,11 @@
+// Logo
+$(document).ready(function(){
+    $("#LOGO").click(function(){
+        $("#LOGO").slideUp(1500);
+    });
+});
+
+
 // Login Details
 function login(){
   let username = document.getElementById("username").value; // Assigning the value of username to 'username'
