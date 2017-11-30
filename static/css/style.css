@@ -1,9 +1,3 @@
-body{
-  background-image: url("../img/chat-wallpaper.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .msg_bubble{
   border-radius: 50px;
   padding:10px;

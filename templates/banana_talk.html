@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title> Python Chat </title>
+    <title> Banana Talk - Home </title>
+    <link rel="stylesheet" href="/static/css/ionicons.min.css"/>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/static/css/style.css"/>
   </head>
@@ -12,15 +13,10 @@
     <div class="messagebox"></div>
 <!-- Form for accepting the Message -->
     <nav class="navbar bg-dark navbar-dark fixed-bottom">
-    <form method="post" class="form-inline">
-         <div class="input-group col-6">
-           <input type="text" class="username form-control" placeholder="Name">
-         </div>
-         <div class="input-group col-6">
-           <input type="text" class="message form-control " placeholder="Messages">
-           <span class="input-group-btn">
-             <button type="submit" class="btn btn-success" id="send"> Send </button>
-           </span>
+    <form method="post">
+      <div class="input-group">
+        <input type="text" class="message form-control" placeholder="Messages">
+          <button type="submit" class="btn btn-success">SEND&nbsp;&nbsp;<i class="icon ion-paper-airplane"></i></button>
       </div>
     </form>
   </nav>
