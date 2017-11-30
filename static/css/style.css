@@ -1,5 +1,21 @@
+<<<<<<< HEAD
+=======
+body {
+	background-image: url("../img/chat-wallpaper.jpg");
+	background-attachment: fixed !important;
+	background-repeat: repeat !important;
+	background-size: cover !important;
+}
+.navbar{
+	display: block !important;
+}
+.messagebox{
+	margin-bottom: 55px;
+}
+>>>>>>> fb7206f30fb74a46e785d088585d8541753ab08b
 .msg_bubble{
   border-radius: 50px;
+	margin-top: 2px;
   padding:10px;
   background-color: silver;
   display: inline-flex;

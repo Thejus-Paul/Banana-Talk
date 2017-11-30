@@ -3,27 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<<<<<<< HEAD
   <title> Login </title>
+=======
+  <title> Banana Talk - Login </title>
+  <link rel="stylesheet" href="/static/css/ionicons.min.css"/>
+>>>>>>> fb7206f30fb74a46e785d088585d8541753ab08b
   <link rel="stylesheet" href="/static/css/bootstrap.min.css"/>
   <link rel="stylesheet" href="/static/css/init.css"/>
 </head>
 <body>
+
+<div id="LOGO"></div>
+
   <div class="container centered">
   <form method="get">
-    <fieldset>
-      <legend> Login</legend>
     <div class="input-group">
-      <span class="input-group-addon"> User Name: </span>
+      <span class="input-group-addon"><i class="icon ion-person"></i></span>
       <input type="text" class="username form-control" id="username" placeholder="User Name">
     </div><br>
     <div class="input-group">
-      <span class="input-group-addon"> Password: </span>
+      <span class="input-group-addon"><i class="icon ion-locked"></i></span>
       <input type="password" id="password" class="password form-control" placeholder="Password">
     </div><br>
-    <center><input type="submit" class="btn btn-outline-success" value="Submit" onclick="login()"></input><center>
-  </fieldset>
+    <center><button type="submit" class="btn btn-info" onclick="login()">LOGIN&nbsp;&nbsp;<i class="icon ion-log-in"></i></button><center>
 </form>
 </div>
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
 <script type="text/javascript" src="/static/js/init.js"></script>
 </body>
 </html>

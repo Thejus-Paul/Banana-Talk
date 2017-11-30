@@ -9,7 +9,7 @@ socket.on( 'connect', function() {
     e.preventDefault()
     // Sending the object containing username and message
     socket.emit( 'my event', {
-      username : $('input.username').val(), // Storing the value from input tag and class username
+      username : document.cookie, // Storing the value from input tag and class username
       message : $( 'input.message' ).val(), // Storing the value from input tag and class message (an extra ',' is used at the end to avoid an error)
     } )
     // empty the input field and focusing
@@ -20,12 +20,17 @@ socket.on( 'connect', function() {
 socket.on( 'my response', function( json ) {
   // To avoid printing 'undefined' value for username and message
 
-  if(typeof json.username !== 'undefined' ) {
+  if(json.username !== '' ) {
+    // Verifying if the name given is the user or not
     if(username !== json.username){
-    $( 'div.messagebox' ).append("<div class='msg_bubble'><strong>"+json.username+"</strong>&nbsp;&nbsp;"+json.message+"</div><br><br>")
+      // If user is not the same then the message will be displayed in the left side
+      $( 'div.messagebox' ).append("<div class='msg_bubble'><strong>"+json.username+"</strong>&nbsp;&nbsp;"+json.message+"</div><br>")
   }
     else{
+      // If user is same then the message will be displayed in the right side
       $( 'div.messagebox' ).append("<div class='right_msg_bubble'><strong>"+json.username+"</strong>&nbsp;&nbsp;"+json.message+"</div><br><br>")
     }
   }
 })
+// Instant scrolling
+setInterval(function(){ window.scrollBy(0,1000); }, 1);
